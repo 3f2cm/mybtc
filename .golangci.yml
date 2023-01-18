@@ -1,0 +1,32 @@
+issues:
+  exclude-use-default: false
+  exclude-rules:
+    - path: "_test.go$" # Test functions can be longer.
+      text: "is too long"
+      linters:
+        - funlen
+    - text: "do not define dynamic errors, use wrapped static errors instead"
+      linters:
+        - goerr113 # it's too tight to prevent fmt.Errorf() and errors.New() in that way.
+linters:
+  enable-all: true
+  disable:
+    - varcheck
+    - deadcode
+    - interfacer
+    - structcheck
+    - exhaustivestruct
+    - scopelint
+    - maligned
+    - golint
+    - ifshort
+    - nosnakecase
+    - rowserrcheck
+    - sqlclosecheck
+    - wastedassign
+    - varnamelen # I want to use short var
+    - forbidigo # to use fmt.Printf
+    - exhaustruct # noisy for json unmarshal?
+    - tagliatelle # want freedom about gat name
+    - paralleltest # still ok to run tests sequentially
+  fast: false
