@@ -34,7 +34,7 @@ type Out struct {
 
 // Input expresses an input to generate command that build transaction message with signatures.
 type Input struct {
-	Ins  []In     `json:"in"`
+	Ins  []In     `json:"ins"`
 	Outs []Out    `json:"outs"`
 	WIFs []string `json:"wifs"`
 }
