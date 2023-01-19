@@ -22,4 +22,4 @@ lint:
 
 .PHONY: clean
 clean:
-	rm -f $(MAKEFILE_DIR){mybtc,uxto-summary}
+	rm -f $(MAKEFILE_DIR){mybtc,utxo-summary}

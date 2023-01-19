@@ -1,5 +1,5 @@
 /*
-Package uxto-summary provides a command that retrieves UXTO info
+Package utxo-summary provides a command that retrieves UTXO info
 about given TestNet3 Bitcoin address
 */
 package main

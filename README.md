@@ -31,14 +31,14 @@ $ mybtc tx generate < cmd/test_data/sample_1_input.json
 01000000012d563d01940861f15f6edcff412b1603a0a2f5ce561b4417e557f9c997ec4e20010000008a4730440220327111114de4ceb65143f51f73b5915512f211f31bacb3934b19312a7dfd33a6022047aa55cb056fe14794fd36dde4f6ed2553eac5d19b852a2987ab9c389e060d6701410425adade9f702a4c1e7f312ed7eb9507a6b70a6bafe6c48092137eb991d5b29eb9374edc1c6f83e0b22d5c00f26d0b163a466c45ed814c2b9b929e87ab47e8551ffffffff0200530700000000001976a91427e49532bfeae7a40d878aa5fd2699fe9729cb2588ac60e31600000000001976a91414fc9b2d74e76f4d7463f2a04e06040d3128e22d88ac00000000
 ```
 
-## retrieve UXTO info of an adress
+## retrieve UTXO info of an adress
 
 Creating the input for `mybtc tx generate` is a messy work.
 To reduce the annoyance a bit, there is a simple client for blockstream.
 However, it works only for addresses with short history.
 
 ```shell
-$ uxto-summary mx1UsJZ9aS1z7YrebihuxsTYdUthkcHWTv | jq
+$ utxo-summary mx1UsJZ9aS1z7YrebihuxsTYdUthkcHWTv | jq
 [
   {
     "txid": "3bfd76132d9e204087f8c9c3d1831661e23b06d65df33f2568988b035179092f",
@@ -66,9 +66,9 @@ $ uxto-summary mx1UsJZ9aS1z7YrebihuxsTYdUthkcHWTv | jq
   }
 ]
 
-$ uxto-summary mx1UsJZ9aS1z7YrebihuxsTYdUthkcHWTv | jq '[.[].value] | add'
+$ utxo-summary mx1UsJZ9aS1z7YrebihuxsTYdUthkcHWTv | jq '[.[].value] | add'
 65343531
 
-$ uxto-summary mfWxJ45yp2SFn7UciZyNpvDKrzbhyfKrY8
+$ utxo-summary mfWxJ45yp2SFn7UciZyNpvDKrzbhyfKrY8
 2023/01/17 21:57:33 HTTP request for mfWxJ45yp2SFn7UciZyNpvDKrzbhyfKrY8 failed: code: 400, body: Too many history entries
 ```
