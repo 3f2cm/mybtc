@@ -3,20 +3,17 @@
         {
             "txid": "fea78f76f79ad2aa5ed06fe469556c804719aa804977b71315d705b266c749a9",
             "vout": 1,
-            "scriptpubkey": "76a91414fc9b2d74e76f4d7463f2a04e06040d3128e22d88ac",
-            "wif": "91kjdANmgmctVaUJ4ovCoDv665iMKv7ZHPhVBgsQSt2NL2NDm96"
+            "scriptpubkey": "76a91414fc9b2d74e76f4d7463f2a04e06040d3128e22d88ac"
         },
         {
             "txid": "ca248d2e51d29554343052474785033d6b1d836515b5fe9034b498d53df64263",
             "vout": 1,
-            "scriptpubkey": "76a91427e49532bfeae7a40d878aa5fd2699fe9729cb2588ac",
-            "wif": "92MGKavA4g8Xe4NMiYhGgGoP4cWb5xDY4G5SX9Ei4JSQvVrURYm"
+            "scriptpubkey": "76a91427e49532bfeae7a40d878aa5fd2699fe9729cb2588ac"
         },
         {
             "txid": "fea78f76f79ad2aa5ed06fe469556c804719aa804977b71315d705b266c749a9",
             "vout": 0,
-            "scriptpubkey": "76a91427e49532bfeae7a40d878aa5fd2699fe9729cb2588ac",
-            "wif": "92MGKavA4g8Xe4NMiYhGgGoP4cWb5xDY4G5SX9Ei4JSQvVrURYm"
+            "scriptpubkey": "76a91427e49532bfeae7a40d878aa5fd2699fe9729cb2588ac"
         }
     ],
     "outs": [
@@ -28,5 +25,9 @@
             "addr": "mwcGvJ6ZJZz8HMLnmhUtXQr3cwoXuh1cTP",
             "value": 1500000
         }
+    ],
+    "wifs": [
+        "91kjdANmgmctVaUJ4ovCoDv665iMKv7ZHPhVBgsQSt2NL2NDm96",
+        "92MGKavA4g8Xe4NMiYhGgGoP4cWb5xDY4G5SX9Ei4JSQvVrURYm"
     ]
 }
